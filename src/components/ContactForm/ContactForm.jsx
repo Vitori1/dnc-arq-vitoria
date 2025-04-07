@@ -18,7 +18,7 @@ function ContactForm() {
             try{
                 const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
-                    Headers: {
+                    headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({...formData, access_key: "06e6981b-c316-462e-9135-c3bb889b8a71"})
